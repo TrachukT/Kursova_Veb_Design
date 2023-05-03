@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Login
+<head>
+	<title></title>
+</head>
+<body class="registration">
+	
+	<div class="forma">
+	<div class="reg-form">
+		<h1 class="registration-header">Ще не зареєстровані? Створіть новий акаунт</h1>
+		<form asp-controller="OnlineShop" asp-action="NewAccount" method="post" class="registration-form">
+			<div class="mb-3">
+				<label class="form-label">Ел. пошта</label>
+				<input asp-for=Email type="text" class="form-control" placeholder="Ел. пошта" />
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Ім'я користувача</label>
+				<input asp-for=Username type="text" class="form-control" placeholder="Ім'я" />
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Пароль</label>
+				<input asp-for=Password type="password" class="form-control" placeholder="Пароль" />
+			</div>
+
+			<div class="mb-3">
+				<button type="submit" class="btn btn-primary">Підтвердити</button>
+
+			</div>
+			<h3 class="registration-text">Вже маєте акаунт?<a asp-controller="OnlineShop" asp-action="SignUp">Увійти</a></h3>
+		</form>
+	</div>
+	</div>
+	<div class="card-footer"></div>
+</body>

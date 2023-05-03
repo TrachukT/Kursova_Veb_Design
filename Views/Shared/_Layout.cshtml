@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Магазин біжутерії</title>
+	@* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/OnlineShop.styles.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+</head>
+<body>
+	<header>
+		<nav class="navigation-bar">
+			<div class="container-fluid">
+				<div class="navigator">
+					<ul class="navig-ul">
+						<li class="nav-item">
+							<h2 class="shopn">Магазин біжутерії</h2>
+						</li>
+						<li class="nav-item">
+							<a class="nav-lnk" asp-area="" asp-controller="OnlineShop" asp-action="Index">Домашня сторінка</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-lnk" asp-area="" asp-controller="OnlineShop" asp-action="Payment">Доставка і оплата</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-lnk" asp-area="" asp-controller="OnlineShop" asp-action="Comments">Відгуки</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-lnk" asp-area="" asp-controller="OnlineShop" asp-action="AboutUs">Правила догляду</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-lnk" asp-area="" asp-controller="OnlineShop" asp-action="Registration">Реєстрація/Вхід</a>
+						</li>
+						<li>
+							<a class="nav-lnk" asp-area="" asp-controller="OnlineShop" asp-action="Administrator">Адміністратор</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+
+		@RenderBody()
+
+	</div>
+
+	@*<footer class="border-bottom footer text-muted">
+	<div class="container">
+	&copy; 2023 - OnlineShop - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+	</div>
+	</footer>*@
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

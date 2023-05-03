@@ -1,0 +1,224 @@
+.container-fluid {
+    background-color: black;
+}
+
+.navigator {
+    height: 55px; /* Задає висоту navbar */
+    display: flex; /* Задає flexbox для navbar */
+    align-items: center; /* Вирівнює елементи navbar по вертикалі */
+    justify-content: space-between; /* Розміщує елементи navbar рівномірно */
+    padding: 0 5px; /* Задає відступи для navbar */
+}
+
+.navig-ul {
+    display: flex; /* Задає flexbox для списку елементів */
+    justify-content: space-between; /* Розміщує елементи списку рівномірно */
+    align-items: center; /* Вирівнює елементи списку по вертикалі */
+    list-style: none; /* Приховує маркери списку */
+    margin: 0; /* Видаляє відступи списку */
+    padding:0;
+}
+
+.nav-lnk {
+    color: #fff; /* Задає кольори тексту для посилань */
+    text-decoration: none; /* Видаляє підкреслення для посилань */
+    font-size: 16px; /* Задає розмір тексту для посилань */
+}
+
+.nav-item {
+    margin: 0 10px; /* Задає відступи між елементами */
+}
+
+
+navbar {
+    margin: 0;
+}
+
+.pb-3 {
+    margin:0;
+    
+}
+
+.shopn {
+color:aliceblue;    
+}
+
+main {
+    margin:0;
+}
+.reg-form{
+   
+}
+.forma {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    padding-top:65px;
+}
+
+.payment, .delivery {
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+   /* display:flex;
+    justify-content:center;
+    align-items:center;*/
+}
+
+.payment-elem {
+    align-items: center;
+    margin: 40px;
+    width: calc(50% - 10px); /* Задаємо ширину блоку, забезпечуємо відступ 10px між блоками */
+    height: 100px; /* Задаємо висоту блоку */
+    float: left; /* Розміщуємо блок ліворуч */
+    margin: 5px;/* Задаємо зовнішній відступ між блоками */
+}
+
+.delivery-elem {
+    align-items: center;
+    margin: 40px;
+    width: 100%; /* Задаємо ширину блоку, забезпечуємо відступ 10px між блоками */
+    height: 100px; /* Задаємо висоту блоку */
+    float: left; /* Розміщуємо блок ліворуч */
+    margin: 5px; /* Задаємо зовнішній відступ між блоками */
+    margin-top: 20px;
+}
+
+.container {
+
+    padding: 0;
+    width: 100%;
+}
+
+.heading {
+    margin:0;
+    padding-top:65px;
+    text-align: center;
+}
+.payment-img, .delivery-img {
+    /*margin-right:20px;*/
+    /*margin-left: 20px;*/
+    width: 100px;
+    height: 100px;
+    float: right;
+    padding: 20px;
+}
+.registration-header{
+    color:black;
+}
+.navigation-bar {
+    width: 100%;
+    position: fixed;
+    
+}
+.container {    
+    margin: 0 auto;
+}
+body{
+    
+    margin:0 auto ;
+}
+header{
+    width:100%;
+}
+.delivery-img {
+    float: left;
+}
+
+.payment p {
+    text-align: justify;
+}
+.registration-header {
+    margin: 1em auto;
+    text-align: center;
+}
+
+.registration h1, .registration p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+.registration-form {
+    background-color: black;
+    width: 60vw;
+    max-width: 800px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    padding: 10px;
+    border-radius: 30px;
+}
+.registration-text {
+    margin: 1em auto;
+    text-align: center;
+}
+.registration {
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+    background-color: white;
+    color: #f5f6f7;
+    
+}
+.rules{
+    padding-top: 65px;
+}
+.heading {
+    margin-top: 0px;
+}
+
+
+    .registration fieldset {
+        border: none;
+        padding: 2rem 4px;
+        border-bottom: 3px solid #3b3b4f;
+    }
+
+    .registration fieldset:last-of-type {
+           border-bottom: none;
+    }
+
+    .registration label {
+        display: block;
+        margin: 0.5rem 0 12px 12px;
+    }
+
+    .registration input,
+    .registration textarea,
+    .registration select {
+        margin: 10px 0 10px 10px;
+        width: 98%;
+        min-height: 2em;
+    }
+
+    .registration input, .registration textarea {
+        background-color: #0a0a23;
+        border: 1px solid #0a0a23;
+        color: #ffffff;
+    }
+
+    .registration .inline {
+        width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle;
+    }
+
+    .registration input[type="submit"] {
+        display: block;
+        width: 60%;
+        margin: 1em auto;
+        height: 2em;
+        font-size: 1.1rem;
+        background-color: #3b3b4f;
+        border-color: white;
+        min-width: 300px;
+    }
+
+    .registration input[type="file"] {
+        padding: 1px 2px;
+    }
+    body{
+        width:100%;
+    }
+    
